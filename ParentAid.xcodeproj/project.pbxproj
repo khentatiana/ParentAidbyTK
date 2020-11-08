@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0E2F248D7646F19F28025E13 /* Pods_sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF61F4D3D6BA75E32A03A9AC /* Pods_sample.framework */; };
-		41674F04255610A000DFEA6C /* LoginParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41674F03255610A000DFEA6C /* LoginParentViewController.swift */; };
-		41674F09255687C500DFEA6C /* LoginProviderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41674F08255687C500DFEA6C /* LoginProviderViewController.swift */; };
 		4198E1EE2555EE27009F5092 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4198E1ED2555EE27009F5092 /* LoginViewController.swift */; };
 		4198E1F62555F497009F5092 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4198E1F52555F497009F5092 /* Assets.xcassets */; };
 		8BF6017E03762D3DC5A2B523 /* Pods_sampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70CE5C55EA272B914F58C3BA /* Pods_sampleTests.framework */; };
@@ -41,24 +39,22 @@
 
 /* Begin PBXFileReference section */
 		0BCFBECB81E26C1778ABE3BF /* Pods-sampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sampleTests.debug.xcconfig"; path = "Target Support Files/Pods-sampleTests/Pods-sampleTests.debug.xcconfig"; sourceTree = "<group>"; };
-		41674F03255610A000DFEA6C /* LoginParentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginParentViewController.swift; sourceTree = "<group>"; };
-		41674F08255687C500DFEA6C /* LoginProviderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProviderViewController.swift; sourceTree = "<group>"; };
 		4198E1ED2555EE27009F5092 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4198E1F52555F497009F5092 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70CE5C55EA272B914F58C3BA /* Pods_sampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7736F01384C79ECC458DB3F1 /* Pods-sample-sampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sample-sampleUITests.debug.xcconfig"; path = "Target Support Files/Pods-sample-sampleUITests/Pods-sample-sampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7F0A35737CAF761B56687748 /* Pods_sample_sampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sample_sampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6F1C0070AB6B499895AA8B5 /* Pods-sampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sampleTests.release.xcconfig"; path = "Target Support Files/Pods-sampleTests/Pods-sampleTests.release.xcconfig"; sourceTree = "<group>"; };
-		D628C5EF2551FB6A00BE82A0 /* sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D628C5EF2551FB6A00BE82A0 /* ParentAid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParentAid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D628C5F22551FB6A00BE82A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D628C5F42551FB6A00BE82A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D628C5F92551FB6A00BE82A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D628C5FE2551FB6B00BE82A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D628C6002551FB6B00BE82A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D628C6052551FB6B00BE82A0 /* sampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D628C6052551FB6B00BE82A0 /* ParentAidTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParentAidTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D628C6092551FB6B00BE82A0 /* sampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sampleTests.swift; sourceTree = "<group>"; };
 		D628C60B2551FB6B00BE82A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D628C6102551FB6B00BE82A0 /* sampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D628C6102551FB6B00BE82A0 /* ParentAidUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParentAidUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D628C6142551FB6B00BE82A0 /* sampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sampleUITests.swift; sourceTree = "<group>"; };
 		D628C6162551FB6B00BE82A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB9938C82855CFB95BC3E62A /* Pods-sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sample.debug.xcconfig"; path = "Target Support Files/Pods-sample/Pods-sample.debug.xcconfig"; sourceTree = "<group>"; };
@@ -121,9 +117,9 @@
 		D628C5E62551FB6A00BE82A0 = {
 			isa = PBXGroup;
 			children = (
-				D628C5F12551FB6A00BE82A0 /* sample */,
-				D628C6082551FB6B00BE82A0 /* sampleTests */,
-				D628C6132551FB6B00BE82A0 /* sampleUITests */,
+				D628C5F12551FB6A00BE82A0 /* ParentAid */,
+				D628C6082551FB6B00BE82A0 /* ParentAidTests */,
+				D628C6132551FB6B00BE82A0 /* ParentAidUITests */,
 				D628C5F02551FB6A00BE82A0 /* Products */,
 				B0E4084F6E66883E6380CAE8 /* Pods */,
 				4304CBB6B559DE853F9F035D /* Frameworks */,
@@ -133,14 +129,14 @@
 		D628C5F02551FB6A00BE82A0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D628C5EF2551FB6A00BE82A0 /* sample.app */,
-				D628C6052551FB6B00BE82A0 /* sampleTests.xctest */,
-				D628C6102551FB6B00BE82A0 /* sampleUITests.xctest */,
+				D628C5EF2551FB6A00BE82A0 /* ParentAid.app */,
+				D628C6052551FB6B00BE82A0 /* ParentAidTests.xctest */,
+				D628C6102551FB6B00BE82A0 /* ParentAidUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D628C5F12551FB6A00BE82A0 /* sample */ = {
+		D628C5F12551FB6A00BE82A0 /* ParentAid */ = {
 			isa = PBXGroup;
 			children = (
 				D628C5F22551FB6A00BE82A0 /* AppDelegate.swift */,
@@ -150,36 +146,34 @@
 				D628C5FD2551FB6B00BE82A0 /* LaunchScreen.storyboard */,
 				D628C6002551FB6B00BE82A0 /* Info.plist */,
 				4198E1ED2555EE27009F5092 /* LoginViewController.swift */,
-				41674F03255610A000DFEA6C /* LoginParentViewController.swift */,
-				41674F08255687C500DFEA6C /* LoginProviderViewController.swift */,
 			);
-			path = sample;
+			path = ParentAid;
 			sourceTree = "<group>";
 		};
-		D628C6082551FB6B00BE82A0 /* sampleTests */ = {
+		D628C6082551FB6B00BE82A0 /* ParentAidTests */ = {
 			isa = PBXGroup;
 			children = (
 				D628C6092551FB6B00BE82A0 /* sampleTests.swift */,
 				D628C60B2551FB6B00BE82A0 /* Info.plist */,
 			);
-			path = sampleTests;
+			path = ParentAidTests;
 			sourceTree = "<group>";
 		};
-		D628C6132551FB6B00BE82A0 /* sampleUITests */ = {
+		D628C6132551FB6B00BE82A0 /* ParentAidUITests */ = {
 			isa = PBXGroup;
 			children = (
 				D628C6142551FB6B00BE82A0 /* sampleUITests.swift */,
 				D628C6162551FB6B00BE82A0 /* Info.plist */,
 			);
-			path = sampleUITests;
+			path = ParentAidUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D628C5EE2551FB6A00BE82A0 /* sample */ = {
+		D628C5EE2551FB6A00BE82A0 /* ParentAid */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D628C6192551FB6B00BE82A0 /* Build configuration list for PBXNativeTarget "sample" */;
+			buildConfigurationList = D628C6192551FB6B00BE82A0 /* Build configuration list for PBXNativeTarget "ParentAid" */;
 			buildPhases = (
 				344D6B2A6ACD721E9EB35E4D /* [CP] Check Pods Manifest.lock */,
 				D628C5EB2551FB6A00BE82A0 /* Sources */,
@@ -191,14 +185,14 @@
 			);
 			dependencies = (
 			);
-			name = sample;
+			name = ParentAid;
 			productName = sample;
-			productReference = D628C5EF2551FB6A00BE82A0 /* sample.app */;
+			productReference = D628C5EF2551FB6A00BE82A0 /* ParentAid.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D628C6042551FB6B00BE82A0 /* sampleTests */ = {
+		D628C6042551FB6B00BE82A0 /* ParentAidTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D628C61C2551FB6B00BE82A0 /* Build configuration list for PBXNativeTarget "sampleTests" */;
+			buildConfigurationList = D628C61C2551FB6B00BE82A0 /* Build configuration list for PBXNativeTarget "ParentAidTests" */;
 			buildPhases = (
 				E464066CFC8C30CA6F2B2D7C /* [CP] Check Pods Manifest.lock */,
 				D628C6012551FB6B00BE82A0 /* Sources */,
@@ -210,14 +204,14 @@
 			dependencies = (
 				D628C6072551FB6B00BE82A0 /* PBXTargetDependency */,
 			);
-			name = sampleTests;
+			name = ParentAidTests;
 			productName = sampleTests;
-			productReference = D628C6052551FB6B00BE82A0 /* sampleTests.xctest */;
+			productReference = D628C6052551FB6B00BE82A0 /* ParentAidTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		D628C60F2551FB6B00BE82A0 /* sampleUITests */ = {
+		D628C60F2551FB6B00BE82A0 /* ParentAidUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D628C61F2551FB6B00BE82A0 /* Build configuration list for PBXNativeTarget "sampleUITests" */;
+			buildConfigurationList = D628C61F2551FB6B00BE82A0 /* Build configuration list for PBXNativeTarget "ParentAidUITests" */;
 			buildPhases = (
 				CAA411AAE0326D26D9BAEC60 /* [CP] Check Pods Manifest.lock */,
 				D628C60C2551FB6B00BE82A0 /* Sources */,
@@ -230,9 +224,9 @@
 			dependencies = (
 				D628C6122551FB6B00BE82A0 /* PBXTargetDependency */,
 			);
-			name = sampleUITests;
+			name = ParentAidUITests;
 			productName = sampleUITests;
-			productReference = D628C6102551FB6B00BE82A0 /* sampleUITests.xctest */;
+			productReference = D628C6102551FB6B00BE82A0 /* ParentAidUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -257,7 +251,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D628C5EA2551FB6A00BE82A0 /* Build configuration list for PBXProject "sample" */;
+			buildConfigurationList = D628C5EA2551FB6A00BE82A0 /* Build configuration list for PBXProject "ParentAid" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -270,9 +264,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D628C5EE2551FB6A00BE82A0 /* sample */,
-				D628C6042551FB6B00BE82A0 /* sampleTests */,
-				D628C60F2551FB6B00BE82A0 /* sampleUITests */,
+				D628C5EE2551FB6A00BE82A0 /* ParentAid */,
+				D628C6042551FB6B00BE82A0 /* ParentAidTests */,
+				D628C60F2551FB6B00BE82A0 /* ParentAidUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -412,9 +406,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41674F04255610A000DFEA6C /* LoginParentViewController.swift in Sources */,
 				4198E1EE2555EE27009F5092 /* LoginViewController.swift in Sources */,
-				41674F09255687C500DFEA6C /* LoginProviderViewController.swift in Sources */,
 				D628C5F32551FB6A00BE82A0 /* AppDelegate.swift in Sources */,
 				D628C5F52551FB6A00BE82A0 /* SceneDelegate.swift in Sources */,
 			);
@@ -441,12 +433,12 @@
 /* Begin PBXTargetDependency section */
 		D628C6072551FB6B00BE82A0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D628C5EE2551FB6A00BE82A0 /* sample */;
+			target = D628C5EE2551FB6A00BE82A0 /* ParentAid */;
 			targetProxy = D628C6062551FB6B00BE82A0 /* PBXContainerItemProxy */;
 		};
 		D628C6122551FB6B00BE82A0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D628C5EE2551FB6A00BE82A0 /* sample */;
+			target = D628C5EE2551FB6A00BE82A0 /* ParentAid */;
 			targetProxy = D628C6112551FB6B00BE82A0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -594,12 +586,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = sample/Info.plist;
+				INFOPLIST_FILE = ParentAid/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Teardrop.sample;
+				PRODUCT_BUNDLE_IDENTIFIER = Teardrop.ParentAid;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -613,12 +605,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = sample/Info.plist;
+				INFOPLIST_FILE = ParentAid/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Teardrop.sample;
+				PRODUCT_BUNDLE_IDENTIFIER = Teardrop.ParentAid;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -643,7 +635,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sample.app/sample";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParentAid.app/ParentAid";
 			};
 			name = Debug;
 		};
@@ -665,7 +657,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sample.app/sample";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParentAid.app/ParentAid";
 			};
 			name = Release;
 		};
@@ -712,7 +704,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D628C5EA2551FB6A00BE82A0 /* Build configuration list for PBXProject "sample" */ = {
+		D628C5EA2551FB6A00BE82A0 /* Build configuration list for PBXProject "ParentAid" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D628C6172551FB6B00BE82A0 /* Debug */,
@@ -721,7 +713,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D628C6192551FB6B00BE82A0 /* Build configuration list for PBXNativeTarget "sample" */ = {
+		D628C6192551FB6B00BE82A0 /* Build configuration list for PBXNativeTarget "ParentAid" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D628C61A2551FB6B00BE82A0 /* Debug */,
@@ -730,7 +722,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D628C61C2551FB6B00BE82A0 /* Build configuration list for PBXNativeTarget "sampleTests" */ = {
+		D628C61C2551FB6B00BE82A0 /* Build configuration list for PBXNativeTarget "ParentAidTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D628C61D2551FB6B00BE82A0 /* Debug */,
@@ -739,7 +731,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D628C61F2551FB6B00BE82A0 /* Build configuration list for PBXNativeTarget "sampleUITests" */ = {
+		D628C61F2551FB6B00BE82A0 /* Build configuration list for PBXNativeTarget "ParentAidUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D628C6202551FB6B00BE82A0 /* Debug */,
