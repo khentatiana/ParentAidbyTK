@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:sample.xcodeproj">
+      location = "group:/Users/tatiana/Desktop/PROJECTS/CODEPATH/ParentAid/ParentAid.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

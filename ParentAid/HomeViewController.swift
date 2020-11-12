@@ -1,13 +1,13 @@
 //
-//  LoginViewController.swift
-//  sample
+//  HomeViewController.swift
+//  ParentAid
 //
-//  Created by Tatiana on 11/6/20.
+//  Created by Tatiana on 11/8/20.
 //
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
