@@ -22,6 +22,16 @@ class ProviderViewController: UIViewController, UITableViewDelegate, UITableView
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func onLogoutButton(_ sender: Any) {
+        PFUser.logOut()
+              let main = UIStoryboard(name: "Main", bundle: nil)
+              let loginViewController = main.instantiateViewController(identifier: "LoginViewController")
+                      
+              guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+                               let delegate = windowScene.delegate as? SceneDelegate
+                         else {return}
+                         delegate.window?.rootViewController = loginViewController
+    }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         let query = PFQuery(className: "KidsEvents")
@@ -43,7 +53,7 @@ class ProviderViewController: UIViewController, UITableViewDelegate, UITableView
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableViewProvider.dequeueReusableCell(withIdentifier: "EventCell") as! EventCell
-               let event = events[indexPath.row]
+        let event = events.reversed()[indexPath.row]
                let user = event["provider"] as! PFUser
                cell.providerLabel.text = user.username
                cell.providerLabel.sizeToFit()
@@ -66,11 +76,24 @@ class ProviderViewController: UIViewController, UITableViewDelegate, UITableView
     /*
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    // In a storyboard-based application, you will often want to do a little preparation before navigation */
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        print("Loading up the details screen")
+        
+        //Find the selected event
+        let cell = sender as! UITableViewCell // Sender is the cell that was tapped
+        let indexPath = tableViewProvider.indexPath(for: cell)! //Index of the cell was tapped
+        let event = events[indexPath.row] //event from selected cell
+        
+        //Pass the selected event to the details view controller
+        let detailsViewController = segue.destination as! EventDetailsViewController //Variable "detailsViewController" is a destination where selected event is segue
+        detailsViewController.event = event //this "event" is referring to the selected event from ProviderViewController
+        
+        //Deselect event when transitioning (after tapping and coming back to main screen)
+        tableViewProvider.deselectRow(at: indexPath, animated: true)
     }
-    */
+   
 
 }
