@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bQE-GL-RdF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Zmd-hi-SMS">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
@@ -62,7 +62,7 @@
         <!--Login View Controller-->
         <scene sceneID="fEe-UE-UEi">
             <objects>
-                <viewController id="Zmd-hi-SMS" customClass="LoginViewController" customModule="ParentAid" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="Zmd-hi-SMS" customClass="LoginViewController" customModule="ParentAid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bHx-oS-6fK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -692,7 +692,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Kids Events" id="7Ga-qU-Q47">
-                        <barButtonItem key="leftBarButtonItem" title="Logout" style="plain" id="1Qh-8X-dWl"/>
+                        <barButtonItem key="leftBarButtonItem" title="Logout" style="plain" id="1Qh-8X-dWl">
+                            <connections>
+                                <action selector="onLogoutButton:" destination="8Mk-ba-yW6" id="lYX-VC-ED0"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="camera.badge.ellipsis" catalog="system" style="plain" id="4vg-Ly-I6B">
                             <connections>
                                 <segue destination="3Ya-03-ctZ" kind="presentation" id="UVT-Mt-AH4"/>

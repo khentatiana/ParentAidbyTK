@@ -22,6 +22,16 @@ class ProviderViewController: UIViewController, UITableViewDelegate, UITableView
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func onLogoutButton(_ sender: Any) {
+        PFUser.logOut()
+              let main = UIStoryboard(name: "Main", bundle: nil)
+              let loginViewController = main.instantiateViewController(identifier: "LoginViewController")
+                      
+              guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+                               let delegate = windowScene.delegate as? SceneDelegate
+                         else {return}
+                         delegate.window?.rootViewController = loginViewController
+    }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         let query = PFQuery(className: "KidsEvents")
