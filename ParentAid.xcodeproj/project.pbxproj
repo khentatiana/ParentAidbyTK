@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0E2F248D7646F19F28025E13 /* Pods_sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF61F4D3D6BA75E32A03A9AC /* Pods_sample.framework */; };
+		41674F3A255863C500DFEA6C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41674F39255863C500DFEA6C /* HomeViewController.swift */; };
+		41674F3F2558686E00DFEA6C /* KidsEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41674F3E2558686E00DFEA6C /* KidsEventsViewController.swift */; };
+		41674F4425586C2900DFEA6C /* KidsEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41674F4325586C2900DFEA6C /* KidsEventCell.swift */; };
 		4198E1EE2555EE27009F5092 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4198E1ED2555EE27009F5092 /* LoginViewController.swift */; };
 		4198E1F62555F497009F5092 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4198E1F52555F497009F5092 /* Assets.xcassets */; };
 		8BF6017E03762D3DC5A2B523 /* Pods_sampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70CE5C55EA272B914F58C3BA /* Pods_sampleTests.framework */; };
@@ -39,6 +42,9 @@
 
 /* Begin PBXFileReference section */
 		0BCFBECB81E26C1778ABE3BF /* Pods-sampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sampleTests.debug.xcconfig"; path = "Target Support Files/Pods-sampleTests/Pods-sampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		41674F39255863C500DFEA6C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		41674F3E2558686E00DFEA6C /* KidsEventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KidsEventsViewController.swift; sourceTree = "<group>"; };
+		41674F4325586C2900DFEA6C /* KidsEventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KidsEventCell.swift; sourceTree = "<group>"; };
 		4198E1ED2555EE27009F5092 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4198E1F52555F497009F5092 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70CE5C55EA272B914F58C3BA /* Pods_sampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,6 +152,9 @@
 				D628C5FD2551FB6B00BE82A0 /* LaunchScreen.storyboard */,
 				D628C6002551FB6B00BE82A0 /* Info.plist */,
 				4198E1ED2555EE27009F5092 /* LoginViewController.swift */,
+				41674F39255863C500DFEA6C /* HomeViewController.swift */,
+				41674F3E2558686E00DFEA6C /* KidsEventsViewController.swift */,
+				41674F4325586C2900DFEA6C /* KidsEventCell.swift */,
 			);
 			path = ParentAid;
 			sourceTree = "<group>";
@@ -406,9 +415,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41674F3F2558686E00DFEA6C /* KidsEventsViewController.swift in Sources */,
 				4198E1EE2555EE27009F5092 /* LoginViewController.swift in Sources */,
 				D628C5F32551FB6A00BE82A0 /* AppDelegate.swift in Sources */,
 				D628C5F52551FB6A00BE82A0 /* SceneDelegate.swift in Sources */,
+				41674F3A255863C500DFEA6C /* HomeViewController.swift in Sources */,
+				41674F4425586C2900DFEA6C /* KidsEventCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,6 +598,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VQMFNJ29R2;
 				INFOPLIST_FILE = ParentAid/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -605,6 +618,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VQMFNJ29R2;
 				INFOPLIST_FILE = ParentAid/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
