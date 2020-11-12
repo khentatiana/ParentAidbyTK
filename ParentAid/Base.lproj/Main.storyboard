@@ -639,12 +639,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="241"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z4R-GT-F4d">
-                                                    <rect key="frame" x="8" y="8" width="398" height="178"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" secondItem="Z4R-GT-F4d" secondAttribute="height" multiplier="199:89" id="Cvm-1J-5Tm"/>
-                                                    </constraints>
-                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Provider" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wa5-m1-AVF">
                                                     <rect key="frame" x="28" y="194" width="73" height="21"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
@@ -657,6 +651,12 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z4R-GT-F4d">
+                                                    <rect key="frame" x="8" y="8" width="398" height="178"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="Z4R-GT-F4d" secondAttribute="height" multiplier="199:89" id="Cvm-1J-5Tm"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="Wa5-m1-AVF" firstAttribute="leading" secondItem="iLi-U0-5up" secondAttribute="leadingMargin" constant="8" id="4aL-8f-Xvn"/>

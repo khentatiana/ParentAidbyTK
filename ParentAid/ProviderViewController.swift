@@ -43,7 +43,7 @@ class ProviderViewController: UIViewController, UITableViewDelegate, UITableView
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableViewProvider.dequeueReusableCell(withIdentifier: "EventCell") as! EventCell
-               let event = events[indexPath.row]
+        let event = events.reversed()[indexPath.row]
                let user = event["provider"] as! PFUser
                cell.providerLabel.text = user.username
                cell.providerLabel.sizeToFit()
