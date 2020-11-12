@@ -44,7 +44,7 @@ class KidsEventsViewController: UIViewController, UITableViewDelegate, UITableVi
 //        cell.usernameProviderLabel.text = user.username
         //cell.usernameProviderLabel.sizeToFit()
 //
-//        cell.descritionLabel.text = event["description"] as! String
+//        cell.descritionLabel.text = event["synopsis"] as! String
        // cell.descritionLabel.sizeToFit()
 //
 //        let imageFile = event["image"] as! PFFileObject
