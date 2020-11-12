@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Zmd-hi-SMS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bQE-GL-RdF">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
@@ -53,10 +53,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Y58-lc-JlI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-181" y="-2245"/>
+            <point key="canvasLocation" x="-181" y="-2361"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="fEe-UE-UEi">
@@ -166,12 +167,12 @@
                     <connections>
                         <outlet property="passwordField" destination="Lvn-Lk-Z8G" id="VqG-zi-HD9"/>
                         <outlet property="usernameField" destination="QSl-mT-jUZ" id="jZL-s8-47w"/>
-                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="loginSegue" id="u7h-h2-kcN"/>
+                        <segue destination="zMN-Ij-Byh" kind="presentation" identifier="loginSegue" id="u7h-h2-kcN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KrX-3K-Y9f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-180" y="-2954"/>
+            <point key="canvasLocation" x="-181" y="-3713"/>
         </scene>
         <!--Login Provider View Controller-->
         <scene sceneID="o29-lw-FwM">
@@ -619,7 +620,7 @@
             </objects>
             <point key="canvasLocation" x="241" y="-49"/>
         </scene>
-        <!--Provider View Controller-->
+        <!--Kids Events-->
         <scene sceneID="U7n-CJ-cut">
             <objects>
                 <viewController id="8Mk-ba-yW6" customClass="ProviderViewController" customModule="ParentAid" customModuleProvider="target" sceneMemberID="viewController">
@@ -651,9 +652,10 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z4R-GT-F4d">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z4R-GT-F4d">
                                                     <rect key="frame" x="8" y="8" width="398" height="178"/>
                                                     <constraints>
+                                                        <constraint firstAttribute="width" secondItem="Z4R-GT-F4d" secondAttribute="height" multiplier="199:89" id="6eg-hc-s3j"/>
                                                         <constraint firstAttribute="width" secondItem="Z4R-GT-F4d" secondAttribute="height" multiplier="199:89" id="Cvm-1J-5Tm"/>
                                                     </constraints>
                                                 </imageView>
@@ -667,6 +669,7 @@
                                                 <constraint firstAttribute="trailing" secondItem="N98-7L-0LF" secondAttribute="trailing" constant="8" id="V3A-vv-Plx"/>
                                                 <constraint firstItem="Wa5-m1-AVF" firstAttribute="top" secondItem="Z4R-GT-F4d" secondAttribute="bottom" constant="8" id="hOH-5z-Vot"/>
                                                 <constraint firstAttribute="trailing" secondItem="Z4R-GT-F4d" secondAttribute="trailing" constant="8" id="kWh-bi-jaZ"/>
+                                                <constraint firstItem="Wa5-m1-AVF" firstAttribute="top" secondItem="Z4R-GT-F4d" secondAttribute="bottom" constant="8" id="u56-dS-QYw"/>
                                                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="N98-7L-0LF" secondAttribute="bottom" constant="8" id="vjz-eu-Egh"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -674,6 +677,7 @@
                                             <outlet property="photoViewProvider" destination="Z4R-GT-F4d" id="KZF-3K-sKy"/>
                                             <outlet property="providerLabel" destination="Wa5-m1-AVF" id="N1d-Gu-dYw"/>
                                             <outlet property="synopsisLabel" destination="N98-7L-0LF" id="Zru-Eg-sBV"/>
+                                            <segue destination="rcS-Dt-wAI" kind="show" id="gY2-0H-E7L"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -682,7 +686,8 @@
                         <viewLayoutGuide key="safeArea" id="vdw-fb-bSb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="7Ga-qU-Q47">
+                    <navigationItem key="navigationItem" title="Kids Events" id="7Ga-qU-Q47">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" style="plain" id="1Qh-8X-dWl"/>
                         <barButtonItem key="rightBarButtonItem" image="camera.badge.ellipsis" catalog="system" style="plain" id="4vg-Ly-I6B">
                             <connections>
                                 <segue destination="3Ya-03-ctZ" kind="presentation" id="UVT-Mt-AH4"/>
@@ -743,7 +748,23 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1009" y="629"/>
+            <point key="canvasLocation" x="662" y="704"/>
+        </scene>
+        <!--Event Details View Controller-->
+        <scene sceneID="5gw-CN-yji">
+            <objects>
+                <viewController id="rcS-Dt-wAI" customClass="EventDetailsViewController" customModule="ParentAid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="svp-bQ-v93">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="tsV-uR-Skb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6Dk-n7-Fvv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mGv-tN-8Gg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1439" y="704"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="bqo-lT-Lbb">
@@ -838,6 +859,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ANY-dG-SLK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1009" y="-760"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dmz-uu-uOH">
+            <objects>
+                <navigationController storyboardIdentifier="ParentProviderNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="zMN-Ij-Byh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="coa-Oe-EFh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Fyv-ck-IdI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VlW-sF-FfC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-181" y="-3034"/>
         </scene>
     </scenes>
     <resources>
