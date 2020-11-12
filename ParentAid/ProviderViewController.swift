@@ -72,16 +72,16 @@ class ProviderViewController: UIViewController, UITableViewDelegate, UITableView
         // Pass the selected object to the new view controller.
         print("Loading up the details screen")
         
-        //Find the selected movie
+        //Find the selected event
         let cell = sender as! UITableViewCell // Sender is the cell that was tapped
         let indexPath = tableViewProvider.indexPath(for: cell)! //Index of the cell was tapped
         let event = events[indexPath.row] //event from selected cell
         
         //Pass the selected event to the details view controller
-        let detailsViewController = segue.destination as! EventDetailsViewController //Variable "detailsViewController" is a destination where selected movie is segue
+        let detailsViewController = segue.destination as! EventDetailsViewController //Variable "detailsViewController" is a destination where selected event is segue
         detailsViewController.event = event //this "event" is referring to the selected event from ProviderViewController
         
-        //Deselect movie when transitioning (after tapping and coming back to main screen)
+        //Deselect event when transitioning (after tapping and coming back to main screen)
         tableViewProvider.deselectRow(at: indexPath, animated: true)
     }
    
