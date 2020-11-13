@@ -32,6 +32,7 @@ class ProviderViewController: UIViewController, UITableViewDelegate, UITableView
                          else {return}
                          delegate.window?.rootViewController = loginViewController
     }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         let query = PFQuery(className: "KidsEvents")
@@ -83,8 +84,10 @@ class ProviderViewController: UIViewController, UITableViewDelegate, UITableView
         print("Loading up the details screen")
         
         //Find the selected event
-        let cell = sender as! UITableViewCell // Sender is the cell that was tapped
-        let indexPath = tableViewProvider.indexPath(for: cell)! //Index of the cell was tapped
+        let cell = sender as! UITableViewCell
+        // Sender is the cell that was tapped
+        let indexPath = tableViewProvider.indexPath(for: cell)!
+        //Index of the cell was tapped
         let event = events[indexPath.row] //event from selected cell
         
         //Pass the selected event to the details view controller
@@ -93,7 +96,7 @@ class ProviderViewController: UIViewController, UITableViewDelegate, UITableView
         
         //Deselect event when transitioning (after tapping and coming back to main screen)
         tableViewProvider.deselectRow(at: indexPath, animated: true)
+    
     }
-   
 
 }
