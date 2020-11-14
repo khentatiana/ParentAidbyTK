@@ -1,5 +1,4 @@
 # ParentAidbyTK
-# ParentAid
 
 **Created by:** [Tatiana Khen](https://github.com/khentatiana) & [Hamida Khatri](https://github.com/hamidakhatri/)
 
